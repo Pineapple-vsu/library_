@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using library.Entity;
 using library.Interfaces.Services;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace library.Controllers
 {
@@ -35,9 +37,17 @@ namespace library.Controllers
         [HttpPut("{Id}")]
         public IActionResult UpdateBook(int Id, Book book)
         {
-            if (Id != book.Id) return BadRequest();
-            _service.UpdateBook(book);
+            var existingBook = _service.GetBook(Id);
+            if (existingBook == null) return NotFound();
+
+            existingBook.Name = book.Name;
+            existingBook.Isbn = book.Isbn;
+            existingBook.Genre = book.Genre;
+            existingBook.Description = book.Description;
+
+            _service.UpdateBook(existingBook);
             return NoContent();
+
         }
 
         [HttpDelete("{Id}")]

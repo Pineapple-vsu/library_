@@ -170,3 +170,4 @@ C:\study\library\library\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.M
 C:\study\library\library\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\study\library\library\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\study\library\library\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\study\library\library\obj\Debug\net8.0\library.sourcelink.json

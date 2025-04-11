@@ -15,13 +15,6 @@ namespace library.Repositories
             _db = db;
         }
 
-        //public IEnumerable<Book> GetAllBooks() => _db.Book.AsNoTracking().ToList();
-
-
-
-        //public Book? GetBook(int id) => _db.Book.AsNoTracking().FirstOrDefault(b => b.Id == id);
-
-
         public IEnumerable<Book> GetAllBooks()
         {
             return _db.Book.ToList();
