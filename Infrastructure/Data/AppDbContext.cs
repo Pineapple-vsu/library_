@@ -9,6 +9,7 @@ namespace library.Infrastructure.Data
     {
         public DbSet<Book> Book { get; set; }
         public DbSet<Author> Author { get; set; }
+        public DbSet<BookStatus> BookStatus { get; set; }
 
 
         public AppDbContext(DbContextOptions<AppDbContext> options)

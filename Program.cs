@@ -16,6 +16,8 @@ builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 
+builder.Services.AddScoped<IBookStatusRepository, BookStatusRepository>();
+builder.Services.AddScoped<IBookStatusService, BookStatusService>();
 
 // Регистрация контекста БД
 builder.Services.AddDbContext<AppDbContext>(options =>
