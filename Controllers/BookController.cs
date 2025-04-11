@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using library.Entity;
 using library.Interfaces.Services;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace library.Controllers
 {

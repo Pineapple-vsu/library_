@@ -13,6 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
 
+builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
+
+
 // Регистрация контекста БД
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
@@ -41,7 +45,6 @@ catch (Exception ex)
     Console.WriteLine($"Ошибка: {ex.Message}");
 }
 
-// Конфигурация middleware
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
