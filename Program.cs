@@ -19,6 +19,9 @@ builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IBookStatusRepository, BookStatusRepository>();
 builder.Services.AddScoped<IBookStatusService, BookStatusService>();
 
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+
 // Регистрация контекста БД
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
