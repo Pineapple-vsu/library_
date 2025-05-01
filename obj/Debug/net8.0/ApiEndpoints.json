@@ -218,6 +218,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "library.Controllers.BookAuthorController",
+    "Method": "GetAll",
+    "RelativePath": "BookAuthor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[library.Entity.BookAuthor, library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "library.Controllers.BookAuthorController",
+    "Method": "AddBookAuthor",
+    "RelativePath": "BookAuthor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookAuthor",
+        "Type": "library.Entity.BookAuthor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "library.Entity.BookAuthor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "library.Controllers.BookAuthorController",
+    "Method": "GetBookAuthor",
+    "RelativePath": "BookAuthor/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "library.Entity.BookAuthor",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "library.Controllers.BookAuthorController",
+    "Method": "UpdateBookAuthor",
+    "RelativePath": "BookAuthor/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookAuthor",
+        "Type": "library.Entity.BookAuthor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "library.Controllers.BookAuthorController",
+    "Method": "DeleteBookAuthor",
+    "RelativePath": "BookAuthor/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "library.Controllers.BookStatusController",
     "Method": "GetAll",
     "RelativePath": "BookStatus",

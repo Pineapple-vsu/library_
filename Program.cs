@@ -25,6 +25,9 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IPeopleRepository, PeopleRepository>();
 builder.Services.AddScoped<IPeopleService, PeopleService>();
 
+builder.Services.AddScoped<IBookAuthorRepository, BookAuthorRepository>();
+builder.Services.AddScoped<IBookAuthorService, BookAuthorService>();
+
 // Регистрация контекста БД
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
@@ -45,3 +48,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
+
+
+//EntityFrameworkCore\Add-Migration MigrationName
