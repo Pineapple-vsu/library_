@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace library.Entity
@@ -11,5 +12,7 @@ namespace library.Entity
         [Required]
         [Column("Role_Name")]
         public string Name { get; set; } = string.Empty;
+
+        //public ICollection<People>? People { get; set; }
     }
 }

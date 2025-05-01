@@ -3,40 +3,68 @@
   "WorkspaceRootPath": "C:\\study\\library\\library\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\repositories\\peoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:repositories\\peoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\interfaces\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:interfaces\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\interfaces\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:interfaces\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\interfaces\\repositories\\ipeoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:interfaces\\repositories\\ipeoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:repositories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\interfaces\\services\\ipeopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:interfaces\\services\\ipeopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\interfaces\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:interfaces\\services\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\interfaces\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:interfaces\\repositories\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\entity\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:entity\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:entity\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\entity\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:entity\\people.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\study\\library\\library\\Migrations\\20250430171728_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250430171728_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\services\\peopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|solutionrelative:services\\peopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D915E980-D421-45CE-A4F1-AAC2D84ABD4C}|library.csproj|c:\\study\\library\\library\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,30 +82,119 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\study\\library\\library\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\study\\library\\library\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "20250430171728_InitialCreate.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Migrations\\20250430171728_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250430171728_InitialCreate.cs",
+              "ToolTip": "C:\\study\\library\\library\\Migrations\\20250430171728_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250430171728_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T11:15:28.228Z",
+              "WhenOpened": "2025-04-30T17:17:28.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PeopleController.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Controllers\\PeopleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PeopleController.cs",
+              "ToolTip": "C:\\study\\library\\library\\Controllers\\PeopleController.cs",
+              "RelativeToolTip": "Controllers\\PeopleController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:27:00.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PeopleService.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Services\\PeopleService.cs",
+              "RelativeDocumentMoniker": "Services\\PeopleService.cs",
+              "ToolTip": "C:\\study\\library\\library\\Services\\PeopleService.cs",
+              "RelativeToolTip": "Services\\PeopleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T09:09:43.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PeopleRepository.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Repositories\\PeopleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PeopleRepository.cs",
+              "ToolTip": "C:\\study\\library\\library\\Repositories\\PeopleRepository.cs",
+              "RelativeToolTip": "Repositories\\PeopleRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAowCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T09:09:28.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPeopleService.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Interfaces\\Services\\IPeopleService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\IPeopleService.cs",
+              "ToolTip": "C:\\study\\library\\library\\Interfaces\\Services\\IPeopleService.cs",
+              "RelativeToolTip": "Interfaces\\Services\\IPeopleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T09:05:11.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPeopleRepository.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Interfaces\\Repositories\\IPeopleRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Repositories\\IPeopleRepository.cs",
+              "ToolTip": "C:\\study\\library\\library\\Interfaces\\Repositories\\IPeopleRepository.cs",
+              "RelativeToolTip": "Interfaces\\Repositories\\IPeopleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T09:00:16.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "People.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Entity\\People.cs",
+              "RelativeDocumentMoniker": "Entity\\People.cs",
+              "ToolTip": "C:\\study\\library\\library\\Entity\\People.cs",
+              "RelativeToolTip": "Entity\\People.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T08:28:47.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\study\\library\\library\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\study\\library\\library\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T11:15:28.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Entity\\Role.cs",
               "RelativeDocumentMoniker": "Entity\\Role.cs",
               "ToolTip": "C:\\study\\library\\library\\Entity\\Role.cs",
               "RelativeToolTip": "Entity\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T18:08:13.74Z",
               "EditorCaption": ""
@@ -90,40 +207,40 @@
               "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
               "ToolTip": "C:\\study\\library\\library\\Controllers\\RoleController.cs",
               "RelativeToolTip": "Controllers\\RoleController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T11:05:13.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RoleService.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Services\\RoleService.cs",
               "RelativeDocumentMoniker": "Services\\RoleService.cs",
               "ToolTip": "C:\\study\\library\\library\\Services\\RoleService.cs",
               "RelativeToolTip": "Services\\RoleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwA8AAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T10:33:15.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "RoleRepository.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Repositories\\RoleRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\RoleRepository.cs",
               "ToolTip": "C:\\study\\library\\library\\Repositories\\RoleRepository.cs",
               "RelativeToolTip": "Repositories\\RoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T10:16:31.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "IRoleService.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Interfaces\\Services\\IRoleService.cs",
               "RelativeDocumentMoniker": "Interfaces\\Services\\IRoleService.cs",
@@ -136,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "IRoleRepository.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Interfaces\\Repositories\\IRoleRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\Repositories\\IRoleRepository.cs",
@@ -149,32 +266,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\study\\library\\library\\Infrastructure\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T11:34:54.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Entity\\Author.cs",
               "RelativeDocumentMoniker": "Entity\\Author.cs",
               "ToolTip": "C:\\study\\library\\library\\Entity\\Author.cs",
               "RelativeToolTip": "Entity\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T07:45:49.78Z"
+              "WhenOpened": "2025-04-11T07:45:49.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "AuthorController.cs",
               "DocumentMoniker": "C:\\study\\library\\library\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthorController.cs",
@@ -186,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "library.csproj",
               "DocumentMoniker": "C:\\study\\library\\library\\library.csproj",
               "RelativeDocumentMoniker": "library.csproj",

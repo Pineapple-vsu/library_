@@ -11,7 +11,7 @@ namespace library.Infrastructure.Data
         public DbSet<Author> Author { get; set; }
         public DbSet<BookStatus> BookStatus { get; set; }
         public DbSet<Role> Role { get; set; }
-
+        public DbSet<People> People { get; set; }
 
 
         public AppDbContext(DbContextOptions<AppDbContext> options)

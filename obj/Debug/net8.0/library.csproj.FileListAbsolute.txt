@@ -171,3 +171,11 @@ C:\study\library\library\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.M
 C:\study\library\library\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\study\library\library\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\study\library\library\obj\Debug\net8.0\library.sourcelink.json
+C:\study\library\library\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+C:\study\library\library\bin\Debug\net8.0\EntityFramework.dll
+C:\study\library\library\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\study\library\library\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\study\library\library\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\study\library\library\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\study\library\library\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\study\library\library\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
