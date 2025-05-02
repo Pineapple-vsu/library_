@@ -14,6 +14,7 @@ namespace library.Infrastructure.Data
         public DbSet<People> People { get; set; }
         public DbSet<BookAuthor> BookAuthor { get; set; }
         public DbSet<BookCopy> BookCopy { get; set; }
+        public DbSet<History> History { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
       : base(options)

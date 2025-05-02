@@ -12,6 +12,6 @@ namespace library.Entity
         [Column("Role_Name")]
         public string Name { get; set; } = string.Empty;
 
-        public List<People> People { get; set; }
+        //public List<People> People { get; set; }
     }
 }
