@@ -13,6 +13,7 @@ namespace library.Infrastructure.Data
         public DbSet<Role> Role { get; set; }
         public DbSet<People> People { get; set; }
         public DbSet<BookAuthor> BookAuthor { get; set; }
+        public DbSet<BookCopy> BookCopy { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
       : base(options)
