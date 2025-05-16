@@ -9,5 +9,8 @@ namespace library.Interfaces.Services
         History AddHistory(History history);
         void UpdateHistory(History history);
         void DeleteHistory(int id);
+        IEnumerable<History> GetOverdueBooks();
+        IEnumerable<History> GetBooksExpiringSoon();
+
     }
 }

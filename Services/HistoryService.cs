@@ -23,5 +23,14 @@ namespace library.Services
         public void UpdateHistory(History history) => _repository.UpdateHistory(history);
 
         public void DeleteHistory(int id) => _repository.DeleteHistory(id);
+
+        public IEnumerable<History> GetOverdueBooks()
+        {
+            return _repository.GetOverdueBooks();
+        }
+        public IEnumerable<History> GetBooksExpiringSoon()
+        {
+            return _repository.GetBooksExpiringSoon();
+        }
     }
 }

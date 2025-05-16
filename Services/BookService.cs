@@ -22,5 +22,10 @@ namespace library.Services
         public void UpdateBook(Book Book) => _repository.UpdateBook(Book);
 
         public void DeleteBook(int Id) => _repository.DeleteBook(Id);
+
+        public IDictionary<Book, int> GetAvailableBooks() => _repository.GetAvailableBooks();
+
+        public IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByName(string name)
+             => _repository.GetAvailableBooksByName(name);
     }
 }

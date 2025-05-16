@@ -46,5 +46,40 @@ namespace library.Repositories
                 _db.SaveChanges();
             }
         }
+        public IDictionary<Book, int> GetAvailableBooks()
+        {
+            var freeCopies = _db.BookCopy
+                .Include(bc => bc.Book)
+                .Include(bc => bc.Status)
+                .Where(bc => bc.Status != null && bc.Status.Name == "в библиотеке")
+                .ToList();
+
+            
+            var availableBooks = freeCopies
+                .GroupBy(bc => bc.Book)
+                .ToDictionary(g => g.Key, g => g.Count());
+
+            return availableBooks;
+        }
+        public IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByName(string name)
+        {
+            string lowerName = name.ToLower();
+
+            var freeCopies = _db.BookCopy
+                .Include(bc => bc.Book)
+                .Include(bc => bc.Status)
+                .Where(bc => bc.Status != null &&
+                             bc.Status.Name.ToLower() == "в библиотеке" &&
+                             bc.Book.Name.ToLower().Contains(lowerName))
+                .ToList();
+
+            var availableBooks = freeCopies
+                .GroupBy(bc => bc.Book)
+                .Select(g => (book: g.Key, freeCopies: g.Count(), copies: g.AsEnumerable()))
+                .ToList();
+
+            return availableBooks;
+        }
+
     }
 }

@@ -46,5 +46,15 @@ namespace library.Controllers
             _service.DeletePeople(Id);
             return NoContent();
         }
+        [HttpGet("{userId}/historyBooks")]
+        public ActionResult<IEnumerable<History>> GetUserHistoryBooks(int userId)
+        {
+            var historyBooks = _service.GetUserHistoryWithBooks(userId);
+            if (historyBooks == null || !historyBooks.Any())
+            {
+                return NotFound();
+            }
+            return Ok(historyBooks);
+        }
     }
 }

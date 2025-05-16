@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using library.Entity;
 using library.Interfaces.Services;
+using System.Collections.Generic;
+using library.Services;
 
 namespace library.Controllers
 {
@@ -47,12 +49,50 @@ namespace library.Controllers
             return NoContent();
 
         }
-
         [HttpDelete("{Id}")]
         public IActionResult Delete(int Id)
         {
             _service.DeleteBook(Id);
             return NoContent();
         }
+
+        [HttpGet("availableBooks")]
+        public ActionResult<IEnumerable<object>> GetAllAvailableBooks()
+        {
+            var availableBooks = _service.GetAvailableBooksByName("");
+            if (availableBooks == null || !availableBooks.Any())
+            {
+                return NotFound();
+            }
+
+            var formattedResponse = availableBooks.Select(b => new
+            {
+                Book = b.book,
+                FreeCopies = b.freeCopies,
+                Copies = b.copies  
+            });
+
+            return Ok(formattedResponse);
+        }
+
+        [HttpGet("availableBooks/search")]
+        public ActionResult<IEnumerable<object>> SearchAvailableBooksByName([FromQuery] string name)
+        {
+            var availableBooks = _service.GetAvailableBooksByName(name);
+            if (availableBooks == null || !availableBooks.Any())
+            {
+                return NotFound();
+            }
+
+            var response = availableBooks.Select(b => new
+            {
+                Book = b.book,
+                FreeCopies = b.freeCopies,
+                Copies = b.copies 
+            });
+            return Ok(response);
+        }
+
+
     }
 }

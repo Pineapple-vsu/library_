@@ -53,5 +53,14 @@ namespace library.Repositories
                 _db.SaveChanges();
             }
         }
+        public IEnumerable<History> GetUserHistoryWithBooks(int userId)
+        {
+            return _db.History
+                      .Where(h => h.PeopleId == userId)
+                      .Include(h => h.Copy)          
+                      .ThenInclude(c => c.Book)      
+                      .ToList();
+        }
+
     }
 }

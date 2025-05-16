@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using library.Entity;
+using Microsoft.OpenApi.Models;
 using library.Infrastructure.Data;
 using library.Interfaces.Repositories;
 using library.Interfaces.Services;
@@ -46,9 +47,30 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Добавление сервисов
 builder.Services.AddControllers();
 
-
+// Регистрация swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Library API",
+        Version = "v1",
+        Description = "API для управления библиотекой"
+    });
+});
 
 var app = builder.Build();
+
+// Включение Swagger middleware
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Library API V1");
+    });
+}
+
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

@@ -9,6 +9,7 @@ namespace library.Interfaces.Services
         People AddPeople(People people);
         void UpdatePeople(People people);
         void DeletePeople(int id);
+        IEnumerable<History> GetUserHistoryWithBooks(int userId);
     }
 }
 

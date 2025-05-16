@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using library.Entity;
 using library.Interfaces.Services;
+using library.Services;
 
 namespace library.Controllers
 {
@@ -55,5 +56,21 @@ namespace library.Controllers
             return NoContent();
         }
 
+        [HttpGet("overdueBooks")]
+        public ActionResult<IEnumerable<History>> GetOverdueBooks()
+        {
+            var overdueBooks = _service.GetOverdueBooks();
+            if (overdueBooks == null || !overdueBooks.Any())
+            {
+                return NotFound();
+            }
+            return Ok(overdueBooks);
+        }
+        [HttpGet("expiringBooks")]
+        public ActionResult<IEnumerable<History>> GetExpiringBooks()
+        {
+            var result = _service.GetBooksExpiringSoon();
+            return Ok(result);
+        }
     }
 }

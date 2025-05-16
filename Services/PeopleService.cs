@@ -22,5 +22,11 @@ namespace library.Services
         public void UpdatePeople(People People) => _repository.UpdatePeople(People);
 
         public void DeletePeople(int Id) => _repository.DeletePeople(Id);
+
+        public IEnumerable<History> GetUserHistoryWithBooks(int userId)
+        {
+            return _repository.GetUserHistoryWithBooks(userId);
+        }
+
     }
 }

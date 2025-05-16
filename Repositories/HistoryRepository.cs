@@ -55,5 +55,29 @@ namespace library.Repositories
                 _db.SaveChanges();
             }
         }
+        public IEnumerable<History> GetOverdueBooks()
+        {
+            DateTime now = DateTime.Now;
+            return _db.History
+                      .Where(h => h.ReturnDate == null && h.EndDate < now)
+                      .Include(h => h.Copy)           
+                      .ThenInclude(c => c.Book)       
+                      .ToList();
+        }
+        public IEnumerable<History> GetBooksExpiringSoon()
+        {
+            DateTime today = DateTime.Today;
+            DateTime upperBound = today.AddDays(3);
+
+            return _db.History
+                      .Where(h => h.ReturnDate == null &&
+                                  h.EndDate >= today &&
+                                  h.EndDate < upperBound)
+                      .Include(h => h.Copy)
+                      .ThenInclude(c => c.Book)
+                      .ToList();
+        }
+
+
     }
 }
