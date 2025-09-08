@@ -1,9 +1,11 @@
 ﻿using library.Entity;
 using library.Interfaces.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace library.Controllers 
 {
+    [Authorize(Roles = "worker,admin")]
     [ApiController]
     [Route("[controller]")]
     public class BookCopyController : ControllerBase
@@ -14,7 +16,6 @@ namespace library.Controllers
         {
             _service = service;
         }
-
         [HttpGet]
         public IEnumerable<BookCopy> GetAll() => _service.GetAllBookCopies();
 

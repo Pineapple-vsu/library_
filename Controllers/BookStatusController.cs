@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using library.Entity;
 using library.Interfaces.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace library.Controllers
 {
+    [Authorize(Roles = "worker,admin")]
     [ApiController]
     [Route("[controller]")]
     public class BookStatusController : ControllerBase

@@ -24,22 +24,7 @@ namespace library.Entity
         [Required]
         [JsonIgnore]
         [Column("People_Password")]
-        public string PasswordHash { get; set; } = string.Empty;
-
-        // Это свойство используется для приёма открытого пароля от клиента, затем хешируется
-        [NotMapped]
-        public string Password
-        {
-            // Геттер возвращает пустую строку — нам не нужно отдавать пароль клиенту
-            get => string.Empty;
-            set
-            {
-                if (!string.IsNullOrWhiteSpace(value))
-                {
-                    PasswordHash = BCrypt.Net.BCrypt.HashPassword(value);
-                }
-            }
-        }
+        public string Password { get; set; } = string.Empty;
 
         [ForeignKey("Role")]
         [Column("People_Role_Id")]

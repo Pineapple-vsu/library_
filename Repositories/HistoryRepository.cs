@@ -30,7 +30,7 @@ namespace library.Repositories
             var people = _db.People.Find(history.PeopleId);
             if (copy == null || people == null)
             {
-                throw new Exception("Книга или пользователь не найдены!");
+                throw new Exception("Книга или пользователь не найдены");
             }
 
             history.Copy = copy;

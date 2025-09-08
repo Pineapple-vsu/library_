@@ -3,9 +3,11 @@ using library.Entity;
 using library.Interfaces.Services;
 using System.Collections.Generic;
 using library.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace library.Controllers
 {
+    
     [ApiController]
     [Route("[controller]")]
     public class BookController : ControllerBase
@@ -16,24 +18,24 @@ namespace library.Controllers
         {
             _service = service;
         }
-
+        [Authorize(Roles = "worker,admin")]
         [HttpGet]
         public IEnumerable<Book> GetAll() => _service.GetAllBooks();
-
+        [Authorize(Roles = "worker,admin")]
         [HttpGet("{Id}")]
         public ActionResult<Book> GetBook(int Id)
         {
             var book = _service.GetBook(Id);
             return book == null ? NotFound() : Ok(book);
         }
-
+        [Authorize(Roles = "worker,admin")]
         [HttpPost]
         public ActionResult<Book> AddBook(Book book)
         {
             var newBook = _service.AddBook(book);
             return CreatedAtAction(nameof(GetBook), new { Id = newBook.Id }, newBook);
         }
-
+        [Authorize(Roles = "worker,admin")]
         [HttpPut("{Id}")]
         public IActionResult UpdateBook(int Id, Book book)
         {
@@ -49,6 +51,7 @@ namespace library.Controllers
             return NoContent();
 
         }
+        [Authorize(Roles = "worker,admin")]
         [HttpDelete("{Id}")]
         public IActionResult Delete(int Id)
         {
@@ -56,6 +59,7 @@ namespace library.Controllers
             return NoContent();
         }
 
+        
         [HttpGet("availableBooks")]
         public ActionResult<IEnumerable<object>> GetAllAvailableBooks()
         {

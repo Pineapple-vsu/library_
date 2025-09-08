@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using library.Entity;
 using library.Interfaces.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace library.Controllers
 {
@@ -18,6 +19,7 @@ namespace library.Controllers
         [HttpGet]
         public IEnumerable<Author> GetAll() => _service.GetAllAuthors();
 
+        [Authorize(Roles = "admin")]
         [HttpGet("{Id}")]
         public ActionResult<Author> GetAuthor(int Id)
         {
@@ -25,6 +27,7 @@ namespace library.Controllers
             return author == null ? NotFound() : Ok(author);
         }
 
+        [Authorize(Roles = "worker,admin")]
         [HttpPost]
         public ActionResult<Author> AddAuthor(Author author)
         {
@@ -32,6 +35,7 @@ namespace library.Controllers
             return CreatedAtAction(nameof(GetAuthor), new { Id = newAuthor.Id }, newAuthor);
         }
 
+        [Authorize(Roles = "worker,admin")]
         [HttpPut("{Id}")]
         public IActionResult UpdateAuthor(int Id, Author author)
         {
@@ -45,6 +49,7 @@ namespace library.Controllers
 
         }
 
+        [Authorize(Roles = "worker,admin")]
         [HttpDelete("{Id}")]
         public IActionResult Delete(int Id)
         {

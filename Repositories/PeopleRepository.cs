@@ -29,10 +29,10 @@ namespace library.Repositories
             var role = _db.Role.Find(people.RoleId);
             if (role == null)
             {
-                throw new Exception($"Роль с ID {people.RoleId} не найдена!");
+                throw new Exception($"Роль с ID {people.RoleId} не найдена");
             }
 
-            people.Role = role; // Привязываем роль вручную
+            people.Role = role; 
             _db.People.Add(people);
             _db.SaveChanges();
             return people;

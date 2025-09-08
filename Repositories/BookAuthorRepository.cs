@@ -30,7 +30,7 @@ namespace library.Repositories
             var author = _db.Author.Find(BookAuthor.AuthorId);
             if (book == null || author == null)
             {
-                throw new Exception($"Книга или Автор не найдены!");
+                throw new Exception($"Книга или Автор не найдены");
             }
 
             BookAuthor.Book = book;
