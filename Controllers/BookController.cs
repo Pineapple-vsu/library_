@@ -18,7 +18,6 @@ namespace library.Controllers
         {
             _service = service;
         }
-        [Authorize(Roles = "worker,admin")]
         [HttpGet]
         public IEnumerable<Book> GetAll() => _service.GetAllBooks();
         [Authorize(Roles = "worker,admin")]
@@ -59,7 +58,33 @@ namespace library.Controllers
             return NoContent();
         }
 
-        
+        [Authorize(Roles = "worker,admin")]
+        [HttpPost("upload-image/{id}")]
+        public async Task<IActionResult> UploadImage(int id, IFormFile image)
+        {
+            var book = _service.GetBook(id);
+            if (book == null) return NotFound();
+
+            var fileName = $"{Guid.NewGuid()}_{image.FileName}";
+            var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "books");
+
+            // Создаём папку, если её нет
+            if (!Directory.Exists(folderPath))
+                Directory.CreateDirectory(folderPath);
+
+            var filePath = Path.Combine(folderPath, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await image.CopyToAsync(stream);
+            }
+
+            book.ImagePath = $"/images/books/{fileName}";
+            _service.UpdateBook(book);
+
+            return Ok(new { imageUrl = book.ImagePath });
+        }
+
         [HttpGet("availableBooks")]
         public ActionResult<IEnumerable<object>> GetAllAvailableBooks()
         {

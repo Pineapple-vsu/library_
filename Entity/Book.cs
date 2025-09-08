@@ -17,5 +17,6 @@ namespace library.Entity
         [Required]
         [Column("Book_Description")]
         public string Description { get; set; } = string.Empty;
+        public string? ImagePath { get; set; }
     }
 }

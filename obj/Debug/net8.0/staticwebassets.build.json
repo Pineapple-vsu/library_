@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "TZynjb4MlqnFIiNkXMhwM0gnzlTktraqszuT2VVEtGU=",
+  "Hash": "2OXFTU86LwF7uUjAj8Yrtw4K/LjoJf0Mw8yzE72La54=",
   "Source": "library",
   "BasePath": "_content/library",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "library\\wwwroot",
+      "Source": "library",
+      "ContentRoot": "C:\\study\\library\\library\\wwwroot\\",
+      "BasePath": "_content/library",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }
