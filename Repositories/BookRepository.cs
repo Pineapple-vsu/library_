@@ -46,6 +46,36 @@ namespace library.Repositories
                 _db.SaveChanges();
             }
         }
+
+        public IEnumerable<Book> GetBooksByGenre(Genre? genre)
+        {
+            if (genre == null)
+                return _db.Book.ToList();
+
+            return _db.Book.Where(b => b.Genre == genre).ToList();
+        }
+
+        public IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByGenre(Genre? genre, string name = "")
+        {
+            string lowerName = name.ToLower();
+
+            var freeCopies = _db.BookCopy
+                .Include(bc => bc.Book)
+                .Include(bc => bc.Status)
+                .Where(bc => bc.Status != null &&
+                             bc.Status.Name.ToLower() == "в библиотеке" &&
+                             (string.IsNullOrEmpty(name) || bc.Book.Name.ToLower().Contains(lowerName)) &&
+                             (genre == null || bc.Book.Genre == genre))
+                .ToList();
+
+            var availableBooks = freeCopies
+                .GroupBy(bc => bc.Book)
+                .Select(g => (book: g.Key, freeCopies: g.Count(), copies: g.AsEnumerable()))
+                .ToList();
+
+            return availableBooks;
+        }
+
         public IDictionary<Book, int> GetAvailableBooks()
         {
             var freeCopies = _db.BookCopy
@@ -61,6 +91,7 @@ namespace library.Repositories
 
             return availableBooks;
         }
+
         public IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByName(string name)
         {
             string lowerName = name.ToLower();

@@ -1,5 +1,170 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "images/books/219551319.2sg4i34yb6.jpg",
+      "AssetFile": "images/books/219551319.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DtTLTlWllQPIb9BJfdJDubV1FS5UYMp2sAm9MeItEKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Nov 2025 14:58:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2sg4i34yb6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DtTLTlWllQPIb9BJfdJDubV1FS5UYMp2sAm9MeItEKY="
+        },
+        {
+          "Name": "label",
+          "Value": "images/books/219551319.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/books/219551319.jpg",
+      "AssetFile": "images/books/219551319.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1731325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DtTLTlWllQPIb9BJfdJDubV1FS5UYMp2sAm9MeItEKY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Nov 2025 14:58:47 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DtTLTlWllQPIb9BJfdJDubV1FS5UYMp2sAm9MeItEKY="
+        }
+      ]
+    },
+    {
+      "Route": "images/books/55f1157b-1f60-47f4-b70d-87913a691701_220160462.f8n49grsqx.jpg",
+      "AssetFile": "images/books/55f1157b-1f60-47f4-b70d-87913a691701_220160462.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "410898"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YRio0ttWeoi+1xstuG9EtKfanZtL7mD8eeVAx0j+igs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 11:58:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f8n49grsqx"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YRio0ttWeoi+1xstuG9EtKfanZtL7mD8eeVAx0j+igs="
+        },
+        {
+          "Name": "label",
+          "Value": "images/books/55f1157b-1f60-47f4-b70d-87913a691701_220160462.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/books/55f1157b-1f60-47f4-b70d-87913a691701_220160462.jpg",
+      "AssetFile": "images/books/55f1157b-1f60-47f4-b70d-87913a691701_220160462.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "410898"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YRio0ttWeoi+1xstuG9EtKfanZtL7mD8eeVAx0j+igs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 08 Sep 2025 11:58:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YRio0ttWeoi+1xstuG9EtKfanZtL7mD8eeVAx0j+igs="
+        }
+      ]
+    }
+  ]
 }

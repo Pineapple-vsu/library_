@@ -85,10 +85,11 @@ namespace library.Controllers
             return Ok(new { imageUrl = book.ImagePath });
         }
 
+        // Обновляем метод для поиска доступных книг с поддержкой фильтра по жанру
         [HttpGet("availableBooks")]
-        public ActionResult<IEnumerable<object>> GetAllAvailableBooks()
+        public ActionResult<IEnumerable<object>> GetAllAvailableBooks([FromQuery] Genre? genre = null)
         {
-            var availableBooks = _service.GetAvailableBooksByName("");
+            var availableBooks = _service.GetAvailableBooksByGenre(genre);
             if (availableBooks == null || !availableBooks.Any())
             {
                 return NotFound();
@@ -98,16 +99,19 @@ namespace library.Controllers
             {
                 Book = b.book,
                 FreeCopies = b.freeCopies,
-                Copies = b.copies  
+                Copies = b.copies
             });
 
             return Ok(formattedResponse);
         }
 
+        // Обновляем метод поиска с поддержкой фильтра по жанру
         [HttpGet("availableBooks/search")]
-        public ActionResult<IEnumerable<object>> SearchAvailableBooksByName([FromQuery] string name)
+        public ActionResult<IEnumerable<object>> SearchAvailableBooksByName(
+            [FromQuery] string name,
+            [FromQuery] Genre? genre = null)
         {
-            var availableBooks = _service.GetAvailableBooksByName(name);
+            var availableBooks = _service.GetAvailableBooksByGenre(genre, name);
             if (availableBooks == null || !availableBooks.Any())
             {
                 return NotFound();
@@ -117,11 +121,25 @@ namespace library.Controllers
             {
                 Book = b.book,
                 FreeCopies = b.freeCopies,
-                Copies = b.copies 
+                Copies = b.copies
             });
             return Ok(response);
         }
 
+        // Новый метод для получения книг по жанру (все книги если genre не указан)
+        [HttpGet("genre/{genre?}")]
+        public ActionResult<IEnumerable<Book>> GetBooksByGenre(Genre? genre = null)
+        {
+            var books = _service.GetBooksByGenre(genre);
+            return Ok(books);
+        }
 
+        // Метод для получения всех доступных жанров
+        [HttpGet("genres")]
+        public ActionResult<IEnumerable<string>> GetAllGenres()
+        {
+            var genres = Enum.GetNames(typeof(Genre));
+            return Ok(genres);
+        }
     }
 }

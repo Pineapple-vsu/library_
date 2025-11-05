@@ -486,6 +486,15 @@
         "tags": [
           "Book"
         ],
+        "parameters": [
+          {
+            "name": "genre",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Genre"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -525,6 +534,13 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "genre",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Genre"
+            }
           }
         ],
         "responses": {
@@ -547,6 +563,92 @@
                 "schema": {
                   "type": "array",
                   "items": { }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Book/genre/{genre}": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "parameters": [
+          {
+            "name": "genre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/Genre"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Book"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Book"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Book"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Book/genres": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -1872,8 +1974,7 @@
             "type": "string"
           },
           "genre": {
-            "minLength": 1,
-            "type": "string"
+            "$ref": "#/components/schemas/Genre"
           },
           "description": {
             "minLength": 1,
@@ -1961,6 +2062,18 @@
           }
         },
         "additionalProperties": false
+      },
+      "Genre": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "History": {
         "required": [

@@ -13,7 +13,7 @@ namespace library.Entity
         [Required]
         public string Isbn { get; set; } = string.Empty;
         [Required]
-        public string Genre { get; set; } = string.Empty;
+        public Genre Genre { get; set; } 
         [Required]
         [Column("Book_Description")]
         public string Description { get; set; } = string.Empty;

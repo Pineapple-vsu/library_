@@ -20,5 +20,15 @@ namespace library.Infrastructure.Data
       : base(options)
         {
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            // Конфигурация для преобразования enum Genre в string в БД
+            modelBuilder.Entity<Book>()
+                .Property(b => b.Genre)
+                .HasConversion<string>()
+                .HasMaxLength(50);
+        }
     }
 }

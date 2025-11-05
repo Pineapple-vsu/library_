@@ -27,5 +27,10 @@ namespace library.Services
 
         public IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByName(string name)
              => _repository.GetAvailableBooksByName(name);
+
+        public IEnumerable<Book> GetBooksByGenre(Genre? genre) => _repository.GetBooksByGenre(genre);
+
+        public IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByGenre(Genre? genre, string name = "")
+             => _repository.GetAvailableBooksByGenre(genre, name);
     }
 }

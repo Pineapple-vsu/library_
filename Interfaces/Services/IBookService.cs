@@ -10,5 +10,8 @@ namespace library.Interfaces.Services
         void DeleteBook(int Id);
         IDictionary<Book, int> GetAvailableBooks();
         IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByName(string name);
+
+        IEnumerable<Book> GetBooksByGenre(Genre? genre);
+        IEnumerable<(Book book, int freeCopies, IEnumerable<BookCopy> copies)> GetAvailableBooksByGenre(Genre? genre, string name = "");
     }
 }
